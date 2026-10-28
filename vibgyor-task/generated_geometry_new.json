@@ -1,0 +1,2121 @@
+{
+  "metadata": {
+    "name": "VIBGYOR Residential Building",
+    "type": "3D Building Model",
+    "floors": 7,
+    "units_per_floor": 2,
+    "total_units": 14,
+    "dimensions": {
+      "width": 154.0748815978662,
+      "depth": 44.3340045721761,
+      "total_height": 27.45
+    },
+    "structure": {
+      "stilt_height": 4.2,
+      "floor_height": 3.15,
+      "terrace_height": 1.2
+    }
+  },
+  "materials": {
+    "exterior_wall": {
+      "color": "#E8D7C3",
+      "roughness": 0.7,
+      "metallic": 0.0
+    },
+    "concrete": {
+      "color": "#A9A9A9",
+      "roughness": 0.8,
+      "metallic": 0.0
+    },
+    "glass": {
+      "color": "#87CEEB",
+      "roughness": 0.1,
+      "metallic": 0.0
+    },
+    "balcony_slab": {
+      "color": "#9E9E9E",
+      "roughness": 0.6,
+      "metallic": 0.0
+    },
+    "railing": {
+      "color": "#4A4A4A",
+      "roughness": 0.5,
+      "metallic": 0.2
+    },
+    "column": {
+      "color": "#8B8B8B",
+      "roughness": 0.7,
+      "metallic": 0.1
+    },
+    "ground": {
+      "color": "#696969",
+      "roughness": 0.8,
+      "metallic": 0.0
+    },
+    "roof": {
+      "color": "#555555",
+      "roughness": 0.6,
+      "metallic": 0.0
+    },
+    "door": {
+      "color": "#8B4513",
+      "roughness": 0.7,
+      "metallic": 0.0
+    },
+    "parking": {
+      "color": "#C0C0C0",
+      "roughness": 0.7,
+      "metallic": 0.0
+    }
+  },
+  "objects": [
+    {
+      "type": "box",
+      "name": "Stilt_Floor",
+      "floor_number": 0,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 2.1
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 4.2,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_Stilt_2_1",
+      "floor_number": 0,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 2.1
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 4.2,
+        "depth": 0.6
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_Stilt_2_2",
+      "floor_number": 0,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 2.1
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 4.2,
+        "depth": 0.6
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_Stilt_3_1",
+      "floor_number": 0,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 2.1
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 4.2,
+        "depth": 0.6
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_Stilt_3_2",
+      "floor_number": 0,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 2.1
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 4.2,
+        "depth": 0.6
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 5.775
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F1_W1",
+      "floor_number": 1,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 6.400000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F1_W2",
+      "floor_number": 1,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 6.400000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F1_W3",
+      "floor_number": 1,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 6.400000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F1_W4",
+      "floor_number": 1,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 6.400000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 7.05
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 7.05
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 7.75
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F1_2_1",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F1_2_2",
+      "floor_number": 1,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F1_3_1",
+      "floor_number": 1,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F1_3_2",
+      "floor_number": 1,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 6.175000000000001
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 8.924999999999999
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F2_W1",
+      "floor_number": 2,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 9.55
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F2_W2",
+      "floor_number": 2,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 9.55
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F2_W3",
+      "floor_number": 2,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 9.55
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F2_W4",
+      "floor_number": 2,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 9.55
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 10.2
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 10.2
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 10.9
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F2_2_1",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F2_2_2",
+      "floor_number": 2,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F2_3_1",
+      "floor_number": 2,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F2_3_2",
+      "floor_number": 2,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 9.325
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_3",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 12.075
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F3_W1",
+      "floor_number": 3,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 12.700000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F3_W2",
+      "floor_number": 3,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 12.700000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F3_W3",
+      "floor_number": 3,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 12.700000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F3_W4",
+      "floor_number": 3,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 12.700000000000001
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 13.35
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 13.35
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F3",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 14.05
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F3_2_1",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F3_2_2",
+      "floor_number": 3,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F3_3_1",
+      "floor_number": 3,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F3_3_2",
+      "floor_number": 3,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 12.475
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_4",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 15.224999999999998
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F4_W1",
+      "floor_number": 4,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 15.85
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F4_W2",
+      "floor_number": 4,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 15.85
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F4_W3",
+      "floor_number": 4,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 15.85
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F4_W4",
+      "floor_number": 4,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 15.85
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 16.499999999999996
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 16.499999999999996
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F4",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 17.199999999999996
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F4_2_1",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F4_2_2",
+      "floor_number": 4,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F4_3_1",
+      "floor_number": 4,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F4_3_2",
+      "floor_number": 4,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 15.624999999999998
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_5",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 18.375
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F5_W1",
+      "floor_number": 5,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 18.999999999999996
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F5_W2",
+      "floor_number": 5,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 18.999999999999996
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F5_W3",
+      "floor_number": 5,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 18.999999999999996
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F5_W4",
+      "floor_number": 5,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 18.999999999999996
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 19.65
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 19.65
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F5",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 20.349999999999998
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F5_2_1",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F5_2_2",
+      "floor_number": 5,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F5_3_1",
+      "floor_number": 5,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F5_3_2",
+      "floor_number": 5,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 18.775
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_6",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 21.525
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F6_W1",
+      "floor_number": 6,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 22.149999999999995
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F6_W2",
+      "floor_number": 6,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 22.149999999999995
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F6_W3",
+      "floor_number": 6,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 22.149999999999995
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F6_W4",
+      "floor_number": 6,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 22.149999999999995
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 22.799999999999997
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 22.799999999999997
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F6",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 23.499999999999996
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F6_2_1",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F6_2_2",
+      "floor_number": 6,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F6_3_1",
+      "floor_number": 6,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F6_3_2",
+      "floor_number": 6,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 21.924999999999997
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Floor_7",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 24.674999999999997
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.4,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Front_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 34.61344246083552,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Rear_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 78.64744703301162,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Left_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 202.7882871730598,
+        "y": 56.63044474692357,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Wall_Right_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 356.56316877092604,
+        "y": 56.63044474692357,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 0.3,
+        "height": 44.3340045721761,
+        "depth": 3.15
+      },
+      "material": "exterior_wall",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F7_W1",
+      "floor_number": 7,
+      "center": {
+        "x": 233.45326349263306,
+        "y": 34.38844246083552,
+        "z": 25.299999999999994
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F7_W2",
+      "floor_number": 7,
+      "center": {
+        "x": 264.2682398122063,
+        "y": 34.38844246083552,
+        "z": 25.299999999999994
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F7_W3",
+      "floor_number": 7,
+      "center": {
+        "x": 295.0832161317795,
+        "y": 34.38844246083552,
+        "z": 25.299999999999994
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Window_Front_F7_W4",
+      "floor_number": 7,
+      "center": {
+        "x": 325.89819245135277,
+        "y": 34.38844246083552,
+        "z": 25.299999999999994
+      },
+      "dimensions": {
+        "width": 1.5,
+        "height": 0.15,
+        "depth": 1.8
+      },
+      "material": "glass",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Front_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 33.71344246083552,
+        "z": 25.949999999999996
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Balcony_Rear_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 79.54744703301162,
+        "z": 25.949999999999996
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 1.5,
+        "depth": 0.3
+      },
+      "material": "balcony_slab",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Railing_Front_F7",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 32.86344246083552,
+        "z": 26.649999999999995
+      },
+      "dimensions": {
+        "width": 150.0748815978662,
+        "height": 0.1,
+        "depth": 1.1
+      },
+      "material": "railing",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F7_2_1",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 49.241443984894225,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F7_2_2",
+      "floor_number": 7,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 64.01944550895293,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F7_3_1",
+      "floor_number": 7,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 49.241443984894225,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Column_F7_3_2",
+      "floor_number": 7,
+      "center": {
+        "x": 318.19444837145943,
+        "y": 64.01944550895293,
+        "z": 25.074999999999996
+      },
+      "dimensions": {
+        "width": 0.6,
+        "height": 0.6,
+        "depth": 3.15
+      },
+      "material": "column",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Terrace_Floor",
+      "floor_number": 8,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 26.85
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 1.2,
+        "depth": 44.3340045721761
+      },
+      "material": "concrete",
+      "visible": true
+    },
+    {
+      "type": "box",
+      "name": "Parapet_Front",
+      "floor_number": 8,
+      "center": {
+        "x": 279.6757279719929,
+        "y": 56.63044474692357,
+        "z": 28.050000000000004
+      },
+      "dimensions": {
+        "width": 154.0748815978662,
+        "height": 0.3,
+        "depth": 1.2
+      },
+      "material": "concrete",
+      "visible": true
+    }
+  ],
+  "statistics": {
+    "total_objects": 119,
+    "by_floor": {
+      "0": 5,
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 16,
+      "5": 16,
+      "6": 16,
+      "7": 16,
+      "8": 2
+    },
+    "by_material": {
+      "concrete": 10,
+      "column": 32,
+      "exterior_wall": 28,
+      "glass": 28,
+      "balcony_slab": 14,
+      "railing": 7
+    },
+    "by_type": {
+      "box": 119
+    }
+  }
+}

@@ -1,0 +1,174 @@
+.viewer-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.viewer-header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 2px 0;
+}
+
+.header-subtitle {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+.btn-outline {
+  background: white;
+  color: #2563eb;
+  border-color: #93c5fd;
+}
+
+.btn-outline:hover {
+  background: #eff6ff;
+}
+
+/* Main Upper Section: 3D Viewport + Right Project Info */
+.viewer-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  height: 580px;
+  background: #f0f4f8;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.viewer-main-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.viewer-right-panel {
+  width: 320px;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+/* Lower Section: Floor Plans, 3D Apartments, Renders */
+.viewer-bottom-section {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  min-height: 440px;
+}
+
+.bottom-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 20px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab-button {
+  padding: 12px 18px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tab-button:hover {
+  color: #2563eb;
+}
+
+.tab-button.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+  background: white;
+}
+
+.bottom-content {
+  flex: 1;
+  padding: 0;
+  min-height: 380px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .viewer-content {
+    grid-template-columns: 1fr;
+    height: 500px;
+  }
+  .viewer-right-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .viewer-content {
+    height: 420px;
+  }
+}

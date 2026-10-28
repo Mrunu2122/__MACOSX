@@ -1,0 +1,162 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.app-main-content {
+  flex: 1;
+  margin-left: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    height: 100vh;
+  }
+
+  .app-main-content {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+/* Keep old styles for backward compatibility if needed */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.app-header {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.app-main {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+}
+
+.upload-section {
+  width: 100%;
+  max-width: 600px;
+}
+
+.project-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-header h2 {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.new-project-btn {
+  background: #ff6b6b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.new-project-btn:hover {
+  background: #ff5252;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+}
+
+.viewer-container {
+  width: 100%;
+  height: 600px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.error-message {
+  background: #ff6b6b;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .app-main {
+    padding: 20px;
+  }
+
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .viewer-container {
+    height: 400px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

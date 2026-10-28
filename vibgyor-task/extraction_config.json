@@ -1,0 +1,194 @@
+{
+  "name": "VIBGYOR Residential Building - Prahlad Nagar, Ahmedabad",
+  "description": "Configuration for DXF extraction and 3D reconstruction",
+  
+  "drawing_analysis": {
+    "file": "SUBMISSION - 04.dxf",
+    "format": "DXF (AutoCAD)",
+    "units_in_file": "millimeter",
+    "scale_factor": 0.001,
+    "note": "Drawing is in millimeters; multiply by 0.001 to get meters"
+  },
+  
+  "building_specification": {
+    "name": "VIBGYOR",
+    "location": "Prahlad Nagar, Ahmedabad, India",
+    "residential_floors": 7,
+    "stilt_levels": 1,
+    "terrace_level": 1,
+    "units_per_floor": 2,
+    "unit_type_a": "4BHK - Front facing (18m road)",
+    "unit_type_b": "4BHK - Rear facing",
+    "parking_type": "Ground level stilt (pilotis)"
+  },
+  
+  "architectural_dimensions": {
+    "floor_to_floor_height_m": 3.15,
+    "stilt_height_m": 4.2,
+    "parapet_height_m": 1.2,
+    "typical_balcony_projection_m": 1.5,
+    "wall_thickness_m": 0.3,
+    "column_diameter_m": 0.6
+  },
+  
+  "extracted_building_footprint": {
+    "width_mm": 369.96,
+    "depth_mm": 101.70,
+    "width_m": 36.996,
+    "depth_m": 10.17,
+    "note": "Extracted from DXF bounds; verify against architectural sections"
+  },
+  
+  "layer_mapping": {
+    "walls": ["A_Wall", "A_Wall@1", "A_Wall@2", "a-wall-*"],
+    "doors": ["a-Door*", "door*"],
+    "windows": ["a-Window*", "window*"],
+    "columns": ["P-COL*", "column*", "HATCH COL"],
+    "balconies": ["balcony*", "slab*"],
+    "annotations": ["Text", "TEXT2", "DIMENSIONS"],
+    "parking": ["A_CAR", "A_SCOOTER"],
+    "site": ["TREE", "DRAIN", "PROP. B.AREA"]
+  },
+  
+  "floor_plan_strategy": {
+    "method": "Extract from architectural sections in drawing",
+    "identify_by": [
+      "Looking for floor plan views (typically at elevation 0, 3.15m, 6.3m, etc.)",
+      "Identifying walls as continuous closed polylines",
+      "Classifying apartments by unit type and floor"
+    ],
+    "expected_structure": {
+      "ground_level": "Stilt parking with columns and ramps",
+      "floors_1_to_7": "Residential floors with 2 units each (Type A + Type B)",
+      "terrace": "Open roof space with parapets"
+    }
+  },
+  
+  "material_palette": {
+    "description": "Based on brochure exterior.jpg reference image",
+    "exterior_walls": {
+      "material": "Reinforced concrete",
+      "color": "Light grey (warm neutral tone)",
+      "rgb_reference": [200, 195, 185],
+      "pbr": {
+        "roughness": 0.7,
+        "metalness": 0.0,
+        "normal_strength": 0.3
+      }
+    },
+    "vertical_fins": {
+      "material": "Painted steel or precast concrete",
+      "color": "Dark charcoal (near black)",
+      "rgb_reference": [40, 45, 50],
+      "pbr": {
+        "roughness": 0.5,
+        "metalness": 0.2
+      }
+    },
+    "glazing": {
+      "material": "Tempered glass",
+      "color": "Clear with subtle blue tint",
+      "pbr": {
+        "transmission": 1.0,
+        "roughness": 0.01,
+        "metalness": 0.0,
+        "ior": 1.52
+      }
+    },
+    "balcony_railings": {
+      "material": "Aluminium or glass with metal frame",
+      "color": "Dark grey",
+      "rgb_reference": [60, 65, 70]
+    },
+    "slab_edges": {
+      "material": "Concrete",
+      "color": "Slightly darker than main wall (shadow effect)",
+      "rgb_reference": [150, 145, 135]
+    },
+    "ground_level": {
+      "material": "Polished concrete",
+      "color": "Medium grey",
+      "rgb_reference": [130, 130, 130]
+    }
+  },
+  
+  "render_camera_positions": {
+    "street_level_day": {
+      "name": "Main road, eye-level daytime view",
+      "camera_height_m": 1.65,
+      "distance_from_building_m": 25,
+      "angle_degrees": 0,
+      "description": "Building front facade as seen from street level, foreground includes road and boundary wall"
+    },
+    "front_corner_dusk": {
+      "name": "Front-corner dusk view",
+      "camera_height_m": 8,
+      "distance_from_building_m": 30,
+      "angle_degrees": 45,
+      "description": "Two building facades visible, warm dusk lighting with interior lights visible through windows"
+    },
+    "aerial_45deg": {
+      "name": "Aerial 45-degree view",
+      "camera_height_m": 35,
+      "distance_from_building_m": 40,
+      "angle_degrees": 45,
+      "description": "Full building, parking, terrace, and immediate plot visible; shows spatial relationship"
+    },
+    "entrance_closeup": {
+      "name": "Entrance and canopy close-up",
+      "camera_height_m": 4,
+      "distance_from_building_m": 10,
+      "angle_degrees": 0,
+      "description": "Entrance gate, boundary wall, canopy, material details visible"
+    }
+  },
+  
+  "validation_checklist": {
+    "extraction": [
+      "DXF file successfully parsed",
+      "All layers identified",
+      "Walls extracted as closed polylines",
+      "Doors identified from layer classification",
+      "Windows identified from layer classification",
+      "Columns extracted (if present)"
+    ],
+    "reconstruction": [
+      "7 residential floors created",
+      "Stilt level with columns created",
+      "Terrace created",
+      "Walls match footprint from DXF",
+      "Balconies projecting correctly",
+      "Windows and doors positioned from drawing"
+    ],
+    "rendering": [
+      "4 high-resolution renders generated (2560px minimum)",
+      "Street-level day render complete",
+      "Dusk corner render complete",
+      "Aerial 45° render complete",
+      "Entrance close-up render complete"
+    ],
+    "web_viewer": [
+      "GLB successfully loaded in Three.js viewer",
+      "Floor selection functional (F1-F7)",
+      "Orbit controls working",
+      "Materials visible and realistic",
+      "GLB file size under 40 MB"
+    ]
+  },
+  
+  "known_limitations": [
+    "DXF contains 2D floor plans; sections must be interpreted to determine heights",
+    "Interior furniture and fixtures not modeled",
+    "Complex curved surfaces simplified to polygonal approximations",
+    "Staircase geometry simplified (placeholder treads)",
+    "MEP (mechanical, electrical, plumbing) systems not modeled"
+  ],
+  
+  "next_steps": [
+    "Run extract_dxf.py to generate extraction_output.json",
+    "Run generate_building.py with Blender to create 3D model",
+    "Run render_building.py with Blender to generate 4 renders",
+    "Export GLB for web viewer",
+    "Test in Three.js viewer"
+  ]
+}

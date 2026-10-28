@@ -1,0 +1,374 @@
+.model-viewer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  background: #f0f4f8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Loading & Error Overlays */
+.loading-overlay,
+.error-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(240, 244, 248, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #d1d5db;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-overlay p {
+  font-size: 14px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.error-content {
+  text-align: center;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.error-content h3 {
+  color: #dc2626;
+  margin: 0 0 8px 0;
+}
+
+/* Main Container */
+.model-viewer-container {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.model-viewer {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  outline: none;
+}
+
+.model-viewer canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* LEFT PANEL - FLOORS (matching Reference UI) */
+.viewer-left-panel {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 16px 14px;
+  min-width: 110px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.floor-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #64748b;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+}
+
+.floor-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.floor-btn {
+  padding: 7px 12px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #334155;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.floor-btn:hover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.floor-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+}
+
+.floor-btn.stilt-btn {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+.floor-btn.stilt-btn.active {
+  background: #16a34a;
+  color: white;
+  border-color: #16a34a;
+}
+
+.floor-btn.rooftop-btn {
+  background: #f8fafc;
+  color: #475569;
+}
+
+.floor-btn.rooftop-btn.active {
+  background: #334155;
+  color: white;
+}
+
+/* SELECTED FLOOR BANNER (Overlay above building) */
+.selected-floor-banner {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 40;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+
+.banner-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #93c5fd;
+  margin-bottom: 2px;
+}
+
+.banner-subtitle {
+  font-size: 11px;
+  color: #e2e8f0;
+}
+
+/* RIGHT PANEL - VIEW CONTROLS (matching Reference UI) */
+.viewer-control-panel {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  width: 220px;
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.control-label {
+  font-size: 12px;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.control-guide {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.guide-item {
+  font-size: 11px;
+  color: #475569;
+}
+
+.guide-item span {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.control-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.control-action-btn {
+  padding: 8px 12px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.control-action-btn:hover {
+  background: #e2e8f0;
+  border-color: #94a3b8;
+}
+
+.control-action-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.measure-status {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.control-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+}
+
+.control-toggles label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #334155;
+  cursor: pointer;
+  user-select: none;
+}
+
+.control-toggles input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+/* BOTTOM PANEL - APARTMENT SELECTOR PILL */
+.viewer-bottom-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-radius: 30px;
+  padding: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  z-index: 50;
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.apartment-selector {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.apt-btn {
+  padding: 8px 18px;
+  background: transparent;
+  border: none;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.apt-btn:hover {
+  background: #f1f5f9;
+}
+
+.apt-btn.active {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .viewer-control-panel {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .viewer-left-panel {
+    left: 10px;
+    top: 10px;
+    padding: 10px 8px;
+    min-width: 80px;
+  }
+  .floor-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+  .selected-floor-banner {
+    display: none;
+  }
+}
